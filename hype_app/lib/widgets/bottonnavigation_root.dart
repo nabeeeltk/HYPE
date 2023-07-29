@@ -15,6 +15,7 @@ class _RoutPageState extends State<RoutPage> {
     Container(),
     Container(),
     Container(),
+    Container()
     
   ];
 
@@ -23,6 +24,11 @@ class _RoutPageState extends State<RoutPage> {
     return Scaffold(
       body: _pages[_currentIndex],
       bottomNavigationBar: BottomNavigationBar(
+    
+       backgroundColor: Colors.blue, 
+        selectedItemColor: Colors.black,
+   
+  
         currentIndex: _currentIndex,
         onTap: (index) {
           setState(() {
@@ -31,17 +37,22 @@ class _RoutPageState extends State<RoutPage> {
         },
         items: const [
           BottomNavigationBarItem(
-            icon: Icon(Icons.home),
+            icon: Icon(Icons.home,color: Colors.black,size: 30,),
             label: 'First Page',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.search),
+            icon: Icon(Icons.add,color: Colors.black,size: 30,),
             label: 'Second Page',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.person),
+            icon: Icon(Icons.person,color: Colors.black,size: 30,),
             label: 'Third Page',
           ),
+             BottomNavigationBarItem(
+            icon: Icon(Icons.notification_add,color: Colors.black,size: 30,),
+            label: 'Third Page',
+          ),
+          
         ],
       ),
     );
