@@ -18,18 +18,22 @@ class HomeScreen extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 CircleAvatar(
+                  backgroundColor: Colors.grey.shade900,
                     radius: 25,
                     child: IconButton(
                         onPressed: () {},
                         icon: const Icon(
                           Icons.person,
                           size: 30,
-                          color: Colors.black,
+                          color: Colors.white,
                         ))),
+
+                        Text("HYPE",style: TextStyle(color: Colors.green,fontSize: 20),),
                 CircleAvatar(
+                    backgroundColor: Colors.grey.shade900,
                     radius: 25,
                     child:
-                        IconButton(onPressed: () {}, icon: Icon(Icons.search))),
+                        IconButton(onPressed: () {}, icon: Icon(Icons.search,size: 30,color: Colors.white,))),
               ],
             ),
           ),

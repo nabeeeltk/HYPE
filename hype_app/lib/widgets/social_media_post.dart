@@ -38,7 +38,7 @@ class SocialMediaPost extends StatelessWidget {
                    const  Padding(
                       padding: EdgeInsets.all(8.0),
                       child: Text(
-                        "@user Name",
+                        "@user name",
                         style: TextStyle(
                             color: Colors.black,
                             fontWeight: FontWeight.bold,
@@ -47,8 +47,9 @@ class SocialMediaPost extends StatelessWidget {
                     ),
                       SizedBox(width: 80,),
                    MaterialButton(
+                  
                     height: 30,
-                    color: Colors.black,
+                    color: Colors.green,
                     onPressed: (){},
                    child: Text("FOLLOW +",style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold,color: Colors.white),),)
                   ],
