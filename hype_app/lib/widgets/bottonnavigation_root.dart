@@ -1,8 +1,12 @@
 
 import 'package:flutter/material.dart';
+import 'package:hype_app/view/Branding_and%20Deals/branding_and_deals.dart';
+import 'package:hype_app/view/ProfilePage/profile_page.dart';
 import 'package:hype_app/view/home/home_screen.dart';
 
 class RoutPage extends StatefulWidget {
+  const RoutPage({super.key});
+
   @override
   _RoutPageState createState() => _RoutPageState();
 }
@@ -13,9 +17,10 @@ class _RoutPageState extends State<RoutPage> {
   final List<Widget> _pages = [
    const  HomeScreen(),
     Container(),
+   const  ProfilePage(),
+    BrandingDealsPage(),
     Container(),
-    Container(),
-    Container()
+   
     
   ];
 
@@ -27,7 +32,7 @@ class _RoutPageState extends State<RoutPage> {
     
        backgroundColor: Colors.blue, 
         selectedItemColor: Colors.black,
-   
+               
   
         currentIndex: _currentIndex,
         onTap: (index) {
@@ -37,20 +42,29 @@ class _RoutPageState extends State<RoutPage> {
         },
         items: const [
           BottomNavigationBarItem(
-            icon: Icon(Icons.home,color: Colors.black,size: 30,),
-            label: 'First Page',
+            backgroundColor: Color.fromARGB(255, 8, 72, 10),
+            icon: Icon(Icons.home,color: Colors.white,size: 30,),
+            label: 'Home',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.add,color: Colors.black,size: 30,),
-            label: 'Second Page',
+              backgroundColor: Color.fromARGB(255, 8, 72, 10),
+            icon: Icon(Icons.add,color: Colors.white,size: 30,),
+            label: 'Add post ',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.person,color: Colors.black,size: 30,),
-            label: 'Third Page',
+              backgroundColor: Color.fromARGB(255, 8, 72, 10),
+            icon: Icon(Icons.person,color: Colors.white,size: 30,),
+            label: 'Profile',
           ),
              BottomNavigationBarItem(
-            icon: Icon(Icons.notification_add,color: Colors.black,size: 30,),
-            label: 'Third Page',
+                backgroundColor: Color.fromARGB(255, 8, 72, 10),
+            icon: Icon(Icons.branding_watermark,color: Colors.white,size: 30,),
+            label: 'Brand And Dean',
+          ),
+           BottomNavigationBarItem(
+                backgroundColor: Color.fromARGB(255, 8, 72, 10),
+            icon: Icon(Icons.notification_add,color: Colors.white,size: 30,),
+            label: 'Notification',
           ),
           
         ],

@@ -13,7 +13,7 @@ class SocialMediaPost extends StatelessWidget {
       itemBuilder: (context, index) {
         return Container(
             margin: const EdgeInsets.all(10),
-            // padding: const EdgeInsets.symmetric(vertical: 15),
+            
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(20),
               color: Colors.white,
@@ -27,15 +27,15 @@ class SocialMediaPost extends StatelessWidget {
             ),
             child:
                 Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-             Padding(
-                padding: EdgeInsets.all(8.0),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
                 child: Row(
                   children: [
-                   const  CircleAvatar(
+                    const CircleAvatar(
                       radius: 20,
                       backgroundImage: AssetImage("images/roomimage.jpeg"),
                     ),
-                   const  Padding(
+                    const Padding(
                       padding: EdgeInsets.all(8.0),
                       child: Text(
                         "@user name",
@@ -45,13 +45,21 @@ class SocialMediaPost extends StatelessWidget {
                             fontSize: 15),
                       ),
                     ),
-                      SizedBox(width: 80,),
-                   MaterialButton(
-                  
-                    height: 30,
-                    color: Colors.green,
-                    onPressed: (){},
-                   child: Text("FOLLOW +",style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold,color: Colors.white),),)
+                    const SizedBox(
+                      width: 80,
+                    ),
+                    MaterialButton(
+                      height: 30,
+                      color: Colors.green,
+                      onPressed: () {},
+                      child: const Text(
+                        "FOLLOW +",
+                        style: TextStyle(
+                            fontSize: 18,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white),
+                      ),
+                    )
                   ],
                 ),
               ),
@@ -73,7 +81,7 @@ class SocialMediaPost extends StatelessWidget {
                 child: Row(
                   children: [
                     TextButton.icon(
-                      label: Text("Like"),
+                        label: const Text("Like"),
                         onPressed: () {},
                         icon: const Icon(
                           Icons.favorite,
@@ -81,17 +89,15 @@ class SocialMediaPost extends StatelessWidget {
                           color: Colors.red,
                         )),
                     TextButton.icon(
-                      label: Text("comments"),
+                        label: const Text("comments"),
                         onPressed: () {},
                         icon: const Icon(
                           Icons.comment,
                           size: 20,
                           color: Colors.black,
-                          
-                          
                         )),
                     TextButton.icon(
-                      label: Text("Shope"),
+                        label: const Text("Shope"),
                         onPressed: () {},
                         icon: const Icon(
                           Icons.shopping_bag,
@@ -101,7 +107,6 @@ class SocialMediaPost extends StatelessWidget {
                     const SizedBox(
                       width: 50,
                     ),
-                    
                   ],
                 ),
               )

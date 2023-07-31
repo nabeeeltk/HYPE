@@ -11,14 +11,14 @@ class HomeScreen extends StatelessWidget {
       backgroundColor: Colors.black,
       body: Column(
         children: [
-          SizedBox(height: 30),
+          const SizedBox(height: 30),
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 CircleAvatar(
-                  backgroundColor: Colors.grey.shade900,
+                    backgroundColor: Colors.grey.shade900,
                     radius: 25,
                     child: IconButton(
                         onPressed: () {},
@@ -27,13 +27,20 @@ class HomeScreen extends StatelessWidget {
                           size: 30,
                           color: Colors.white,
                         ))),
-
-                        Text("HYPE",style: TextStyle(color: Colors.green,fontSize: 20),),
+                const Text(
+                  "HYPE",
+                  style: TextStyle(color: Colors.green, fontSize: 20),
+                ),
                 CircleAvatar(
                     backgroundColor: Colors.grey.shade900,
                     radius: 25,
-                    child:
-                        IconButton(onPressed: () {}, icon: Icon(Icons.search,size: 30,color: Colors.white,))),
+                    child: IconButton(
+                        onPressed: () {},
+                        icon: const Icon(
+                          Icons.search,
+                          size: 30,
+                          color: Colors.white,
+                        ))),
               ],
             ),
           ),

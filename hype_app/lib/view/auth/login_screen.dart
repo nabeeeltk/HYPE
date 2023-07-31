@@ -1,9 +1,7 @@
-
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 import 'package:hype_app/view/auth/signup_screen.dart';
-
 
 import '../../widgets/bottonnavigation_root.dart';
 
@@ -13,48 +11,42 @@ class UserLogin extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromARGB(255, 1, 10, 17),
+      backgroundColor: Colors.black,
       body: SingleChildScrollView(
         child: Column(
           children: [
             const SizedBox(
               height: 80,
             ),
-
-
-            Container(height: 150,
-            width: double.infinity,
-            // decoration: BoxDecoration(
-            //   image: DecorationImage(image: AssetImage("images/Logomain.jpg"),fit: BoxFit.cover)
-            // ),
+            const Center(
+              child: Text(
+                "Log In",
+                style: TextStyle(color: Colors.white, fontSize: 30),
+              ),
             ),
-            // const Center(
-            //   child: Text(
-            //     "Log In",
-            //     style: TextStyle(color: Colors.white, fontSize: 30),
-            //   ),
-            // ),
-            // const Text(
-            //   "Please sign in to your existing account.",
-            //   style: TextStyle(color: Colors.grey, fontSize: 15),
-            // ),
-            // const SizedBox(
-            //   height: 50,
-            // ),
+            const Text(
+              "Please sign in to your existing account.",
+              style: TextStyle(color: Colors.grey, fontSize: 15),
+            ),
+            const SizedBox(
+              height: 50,
+            ),
             Container(
               decoration: BoxDecoration(
-                color: Colors.grey.shade200,
-                borderRadius:const  BorderRadius.only(topLeft: Radius.circular(30),topRight:Radius.circular(30))
-              ),
+                  color: Colors.grey.shade200,
+                  borderRadius: const BorderRadius.only(
+                      topLeft: Radius.circular(30),
+                      topRight: Radius.circular(30))),
               height: MediaQuery.of(context).size.height,
               width: MediaQuery.of(context).size.width,
-              
               child: Padding(
-                padding:const  EdgeInsets.all(8.0),
+                padding: const EdgeInsets.all(8.0),
                 child: Column(
                   // Add the children of the container here
                   children: [
-                   const  SizedBox(height: 30,),
+                    const SizedBox(
+                      height: 30,
+                    ),
                     TextField(
                       decoration: InputDecoration(
                           border: OutlineInputBorder(
@@ -92,10 +84,8 @@ class UserLogin extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.end,
                       children: [
                         TextButton(
-                          onPressed: () {
-                           
-                          },
-                          child: Text(
+                          onPressed: () {},
+                          child: const Text(
                             "Forgot Password?",
                             style: TextStyle(
                               color: Colors.black,
@@ -105,12 +95,11 @@ class UserLogin extends StatelessWidget {
                         ),
                       ],
                     ),
-                  
                     Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: MaterialButton(
                         onPressed: () {
-                         Get.to(RoutPage());
+                          Get.to(const RoutPage());
                         },
                         color: Colors.green,
                         height: 50,
@@ -133,7 +122,7 @@ class UserLogin extends StatelessWidget {
                           onPressed: () {
                             Get.to(const UserSignUp());
                           },
-                          child:const  Text(
+                          child: const Text(
                             "SIGN UP",
                             style: TextStyle(color: Colors.green),
                           ),
@@ -147,27 +136,29 @@ class UserLogin extends StatelessWidget {
                     const SizedBox(
                       height: 10,
                     ),
-                  const   Row(
+                    const Row(
                       mainAxisAlignment: MainAxisAlignment.center,
-                      
                       children: [
-
                         CircleAvatar(
                           radius: 25,
-                          backgroundImage: AssetImage("images/facebookicon.png"),
+                          backgroundImage:
+                              AssetImage("images/facebookicon.png"),
                         ),
-                        SizedBox(width: 10,),
-                         CircleAvatar(
+                        SizedBox(
+                          width: 10,
+                        ),
+                        CircleAvatar(
                           radius: 25,
-                          backgroundImage: AssetImage("images/googleicon - Copy.png"),
+                          backgroundImage:
+                              AssetImage("images/googleicon - Copy.png"),
                         ),
-                        
-                        SizedBox(width: 10,),
-                         CircleAvatar(
+                        SizedBox(
+                          width: 10,
+                        ),
+                        CircleAvatar(
                           radius: 25,
                           backgroundImage: AssetImage("images/twitericon.png"),
                         ),
-                        
                       ],
                     ),
                   ],

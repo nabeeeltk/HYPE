@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:hype_app/view/auth/login_screen.dart';
+import 'package:hype_app/view/onbording/onboarding_screen.dart';
 
 
 void main() {
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home:UserLogin()
+      home:const OnboardingScreenFirst()
     );
   }
 }
