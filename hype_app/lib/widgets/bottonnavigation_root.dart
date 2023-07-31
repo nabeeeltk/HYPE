@@ -42,27 +42,27 @@ class _RoutPageState extends State<RoutPage> {
         },
         items: const [
           BottomNavigationBarItem(
-            backgroundColor: Color.fromARGB(255, 8, 72, 10),
+            backgroundColor: Colors.black,
             icon: Icon(Icons.home,color: Colors.white,size: 30,),
             label: 'Home',
           ),
           BottomNavigationBarItem(
-              backgroundColor: Color.fromARGB(255, 8, 72, 10),
+              backgroundColor: Colors.black,
             icon: Icon(Icons.add,color: Colors.white,size: 30,),
             label: 'Add post ',
           ),
           BottomNavigationBarItem(
-              backgroundColor: Color.fromARGB(255, 8, 72, 10),
+              backgroundColor: Colors.black,
             icon: Icon(Icons.person,color: Colors.white,size: 30,),
             label: 'Profile',
           ),
              BottomNavigationBarItem(
-                backgroundColor: Color.fromARGB(255, 8, 72, 10),
+                backgroundColor: Colors.black,
             icon: Icon(Icons.branding_watermark,color: Colors.white,size: 30,),
             label: 'Brand And Dean',
           ),
            BottomNavigationBarItem(
-                backgroundColor: Color.fromARGB(255, 8, 72, 10),
+                backgroundColor: Colors.black,
             icon: Icon(Icons.notification_add,color: Colors.white,size: 30,),
             label: 'Notification',
           ),

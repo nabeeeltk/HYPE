@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:hype_app/widgets/deals.dart';
+
+import '../../widgets/deals_completed_widget.dart';
+import '../../widgets/ongoing_tb_bar.dart';
 
 
 
@@ -25,23 +29,26 @@ class _BrandingDealsPageState extends State<BrandingDealsPage> with SingleTicker
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        backgroundColor: Colors.black,
       appBar: AppBar(
-        title:const  Text('Tab Bar Example'),
+      backgroundColor: Colors.black,
+
+        title:const  Text('Deals',style: TextStyle(color: Colors.white,fontSize: 25),),
         bottom: TabBar(
           controller: _tabController,
           tabs:const  [
-            Tab(text: 'Post'),
-            Tab(text: 'Shop'),
-            Tab(text: 'Inbox'),
+            Tab(text: 'Deals'),
+            Tab(text: 'Ongoing'),
+            Tab(text: 'Completed'),
           ],
         ),
       ),
       body: TabBarView(
         controller: _tabController,
         children:  [
-         Container(),
-           Container(),
-           Container()
+       const   DealsWidget(),
+        const   OngoingWidget(),
+        const    DealCompletedPage(),
       
         ],
       ),
