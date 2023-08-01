@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:hype_app/widgets/deals.dart';
+import 'package:hype_app/view/Branding_and%20Deals/deals.dart';
 
-import '../../widgets/deals_completed_widget.dart';
-import '../../widgets/ongoing_tb_bar.dart';
+import 'deals_completed_widget.dart';
+import 'ongoing_tb_bar.dart';
 
 
 
 class BrandingDealsPage extends StatefulWidget {
+  const BrandingDealsPage({super.key});
+
   @override
   _BrandingDealsPageState createState() => _BrandingDealsPageState();
 }
@@ -45,10 +47,10 @@ class _BrandingDealsPageState extends State<BrandingDealsPage> with SingleTicker
       ),
       body: TabBarView(
         controller: _tabController,
-        children:  [
-       const   DealsWidget(),
-        const   OngoingWidget(),
-        const    DealCompletedPage(),
+        children: const  [
+         DealsWidget(),
+        OngoingWidget(),
+         DealCompletedPage(),
       
         ],
       ),

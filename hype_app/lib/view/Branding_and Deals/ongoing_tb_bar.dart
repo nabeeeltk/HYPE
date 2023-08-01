@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:hype_app/widgets/deals_completed_widget.dart';
+import 'package:hype_app/view/Branding_and%20Deals/Pending_widget.dart';
+import 'package:hype_app/view/Branding_and%20Deals/aproved_widget.dart';
 
 class OngoingWidget extends StatelessWidget {
   const OngoingWidget({super.key});
@@ -27,7 +28,7 @@ class OngoingWidget extends StatelessWidget {
                         child: Container(
                           height: 30,
                           decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(30),
+                            borderRadius: BorderRadius.circular(0),
                             border: Border.all(color: Colors.black12,width: 1)
                           ),
                           child:const  Align(
@@ -40,7 +41,7 @@ class OngoingWidget extends StatelessWidget {
                         child: Container(
                           height: 30,
                           decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(30),
+                            borderRadius: BorderRadius.circular(0),
                             border: Border.all(color: Colors.black12,width: 1)
                           ),
                           child:const  Align(
@@ -54,7 +55,8 @@ class OngoingWidget extends StatelessWidget {
             ),
            const  Expanded(
               child:TabBarView(children: [
-                DealCompletedPage()
+                PendingWidget(),
+               ApprovedWidget()
               ]) )
           ],
         ));
